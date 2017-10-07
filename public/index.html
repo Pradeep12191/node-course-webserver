@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="express-app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./angular.js"></script>
+    <script src="./angular-ui-router.js"></script>
+    <script src="./app.js"></script>
+    <script src="./controller/index.controller.js"></script>
+    <title>Document</title>
+</head>
+<body ng-controller="indexController">
+    {{ 1 + 1 }}
+    {{ pageTitle }}
+    <a ui-sref="home">home</a>
+    <ui-view></ui-view>
+</body>
+</html>
